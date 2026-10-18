@@ -4,7 +4,7 @@
 - Fix ``Observer.midnight`` and ``Observer.noon`` when the time asked for is
   already that event. The altitude-derivative search did not bracket a zero
   on the edge of the window, so one side came back masked and
-  ``which='nearest'`` kept the mask. [#618]
+  ``which='nearest'`` kept the mask. [#645]
 
 - Fix ``LocalTimeConstraint`` comparing its limits against UTC instead of the
   observer's local time (or the timezone attached to ``min``/``max``). Results
